@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .h-content {
+    min-height: calc(100vh - 416px - 96px - 96px - 64px - 24px);
+  }
+
+  @media (max-width: 640px) {
+    .h-content {
+      min-height: calc(100vh - 600px - 96px - 96px - 64px - 24px);
+    }
+  }
+}
